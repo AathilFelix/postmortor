@@ -8,6 +8,8 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 
+import { Dot } from "lucide-react";
+
 
 const Navbar = () => {
   return (
@@ -57,7 +59,7 @@ const Navbar = () => {
             
             <Breadcrumb>
                 <BreadcrumbList>
-                <BreadcrumbSeparator />
+                <BreadcrumbSeparator className="flex items-center justify-center"><Dot size={24} strokeWidth={8} className="text-black"/></BreadcrumbSeparator>
                 <BreadcrumbItem>
                     <BreadcrumbPage className="text-lg lg:text-xl font-medium text-black">Incident Overview</BreadcrumbPage>
                 </BreadcrumbItem>
