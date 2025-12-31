@@ -83,7 +83,7 @@ export async function POST() {
   try {
     const { object: postmortemReport } = await generateObject({
       // 👇 2. Change Model to Google Gemini
-      model: google("gemini-1.5-flash"),
+      model: google("gemini-2.0-flash"),
       schema: PostmortemSchema,
       prompt: `
         You are an SRE. Generate a Postmortem based on these logs.

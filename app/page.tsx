@@ -17,6 +17,12 @@ async function generate() {
   }
 }
 
+async function generate() {
+  await fetch("/api/generate-postmortem", {
+    method: "POST",
+  });
+}
+
 export default function Home() {
   const router = useRouter();
 
